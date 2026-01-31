@@ -3,6 +3,7 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage.jsx";
 import Root from "../pages/Root/Root.jsx";
 import Home from "../pages/Home/Home.jsx";
 import Blog from "../pages/Blog/Blog.jsx";
+import Shop from "../pages/Shop/Shop.jsx";
 
 
 export const router = createBrowserRouter([
@@ -13,6 +14,7 @@ export const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { path: "/", element: <Home /> },
+      { path: "/shop", element: <Shop /> },
       { path: "/blog", element: <Blog /> },
     ],
   },
